@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "455576189820",
+    "firebase_url": "https://slidyapp.firebaseio.com",
+    "project_id": "slidyapp",
+    "storage_bucket": "slidyapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:455576189820:android:c9e0cac1b71d6fa797c2f9",
+        "android_client_info": {
+          "package_name": "com.examplew.teste"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "455576189820-2gbo0iakp55s2mdedbrgr5tcotn8kbpg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.examplew.teste",
+            "certificate_hash": "979aecd1671dc04cfaea5d6fd7d54481dc060cdd"
+          }
+        },
+        {
+          "client_id": "455576189820-bbm3p67rvs0egjrhf598n5feaiupadbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiX2fbHYpOzPH4_6vx5PER_WqhcqFMfVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "455576189820-bbm3p67rvs0egjrhf598n5feaiupadbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
