@@ -47,4 +47,9 @@ class AuthRepository implements IAuthRepository {
     return FirebaseAuth.instance.currentUser();
   }
 
+  @override
+  Future getLogout() {
+   return _auth.signOut();
+  }
+
 }
