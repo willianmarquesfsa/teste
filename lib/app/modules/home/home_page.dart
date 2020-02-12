@@ -1,7 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:teste/app/modules/home/home_controller.dart';
+
+
+
+final controller = HomeController();
 
 class HomePage extends StatefulWidget {
   final String title;
+  
+  
+
   const HomePage({Key key, this.title = "Home"}) : super(key: key);
 
   @override
@@ -13,6 +21,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+                 icon: Icon(Icons.highlight_off),
+                 onPressed: controller.logoff()
+        ),
         title: Text(widget.title),
       ),
       body: Column(

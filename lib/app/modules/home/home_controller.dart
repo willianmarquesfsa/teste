@@ -1,4 +1,6 @@
+import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mobx/mobx.dart';
+import 'package:teste/app/shared/auth/auth_controller.dart';
 
 part 'home_controller.g.dart';
 
@@ -11,5 +13,10 @@ abstract class _HomeBase with Store {
   @action
   void increment() {
     value++;
+  }
+
+  logoff() async {
+   await Modular.get<AuthController>().logout();
+   Modular.to.pushReplacementNamed('/');
   }
 }
