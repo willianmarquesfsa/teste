@@ -23,7 +23,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         leading: IconButton(
                  icon: Icon(Icons.highlight_off),
-                 onPressed: () => controller.logoff()
+                 onPressed: controller.logoff()
         ),
         title: Text(widget.title),
       ),
