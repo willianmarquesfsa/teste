@@ -11,22 +11,13 @@ abstract class _AuthControllerBase with Store {
   final IAuthRepository _authRepository = Modular.get();
   
   @observable
-  AuthStatus status = AuthStatus.loanding;
-
-
-  @observable
   FirebaseUser user;
 
   @action
-  setUser(FirebaseUser value) { 
-    user = value;
-    status = user == null ? AuthStatus.logoff : AuthStatus.login;
-  }
-  
+  setUser(FirebaseUser value) => user = value;
+
   _AuthControllerBase(){
-    _authRepository.getUser().then(setUser).catchError((e){
-     print("errooo");
-    });
+    _authRepository.getUser().then(setUser);
   }
 
 
@@ -39,6 +30,3 @@ Future logout() {
 }
 
 }
-
-enum AuthStatus {
-  loanding, login, logoff}
